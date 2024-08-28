@@ -1,0 +1,5 @@
+emp_id,dept_id,dept_name,dep_head
+101,1,"IT","Tarun"
+102,2,"HR","Raja"
+103,3,"Marketing","Greeshma"
+104,4,"Finance","Elvin"
