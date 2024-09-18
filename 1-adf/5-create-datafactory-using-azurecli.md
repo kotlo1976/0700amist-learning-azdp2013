@@ -45,6 +45,8 @@
     ```
 
 2. **Create Linked Service JSON File (`AzureStorageLinkedService.json`):**
+    $ nano AzureStorageLinkedService.json 
+      (Note: Exit -> CTRL + X -> Y)
     ```json
     {
         "type": "AzureBlobStorage",
@@ -53,6 +55,14 @@
         }
     }
     ```
+Sample:
+{
+  "connectionString": "DefaultEndpointsProtocol=https;
+  AccountName=ssacloudadfstorage;
+  AccountKey=tEJQ78Fimt4iPj+xNFlzQ3BpyIGNSu7j9KE8qOCdZHIAte0JghsiWnQ4NJPusxRXP5Ysom8igg8E+AStwJvbBQ==;
+  EndpointSuffix=core.windows.net;
+}
+    
 
 3. **Create Linked Service:**
     ```bash
@@ -60,6 +70,7 @@
     ```
 
 4. **Create Input Dataset JSON File (`InputDataset.json`):**
+    $ nano InputDataset.json
     ```json
     {
         "linkedServiceName": {
