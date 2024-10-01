@@ -50,3 +50,7 @@ empDF = spark.read.parquet("dbfs:/sid/emp.parquet")
 # COMMAND ----------
 
 display(empDF)
+
+# COMMAND ----------
+
+display(dbutils.fs.rm('dbfs:/sid/emp.parquet'))
